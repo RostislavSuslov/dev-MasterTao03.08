@@ -24,9 +24,21 @@ header {
                 }
             }
         }
+        .navbar-toggler-icon {
+            background-image: none;
+        }
     }
 
+    .navbar-toggler{
+        &:focus {
+            box-shadow: none;
+        }
+
+    }
     .btn {
         padding: 13px 22px;
+    }
+    .navbar-collapse {
+        text-align: center;
     }
 }
