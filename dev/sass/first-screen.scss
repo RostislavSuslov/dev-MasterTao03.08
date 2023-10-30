@@ -1,5 +1,6 @@
 .first-screen {
     position: relative;
+    margin-bottom: 98px;
     .first-screen-nav {
         display: flex;
         max-width: 1568px;    
@@ -13,13 +14,9 @@
 }
 
 .first-screen-slider {
-    .container {
-        padding-top: 164px;
-        padding-bottom: 228px;
-    }
+ 
 
     .slick-slide {
-        border-radius: 20px;
         background-size: cover;
         background-repeat: no-repeat;
     }

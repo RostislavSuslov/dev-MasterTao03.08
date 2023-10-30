@@ -3,6 +3,14 @@ $(document).ready(function() {
     $('.first-screen-slider').slick({
         dots: true,
         appendArrows: '.first-screen-nav',
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                arrows: false,
+              }
+            },
+          ]
     });
 
     // $('.first-screen').slick({
@@ -93,13 +101,59 @@ burger.addEventListener('click', function() {
 
  
 
-// document.getElementById('fileInput').onchange = function () {
-//     //short name
-//     // document.getElementById('file-name').innerHTML = this.files[0].name;
-//     document.getElementById('file-name').innerHTML = this.value;
-// };
+document.getElementById('fileInput').onchange = function () {
+    //short name
+    //document.getElementById('file-name').innerHTML = this.files[0].name;
+
+    //long name
+    document.getElementById('file-name').innerHTML = this.value;
+};
 
  
+
+
+
+
+
+
+
+
+
+
+
+const checkButton = document.querySelectorAll('[type="checkbox"]');
+
+checkButton.forEach((item, index) => {
+    item.closest('.input-column').style.marginBottom = "-10px"; 
+    index === 0? item.closest('.input-box').classList.add('has-checkbox'): null;
+})
+
+
+
+
+
+
+
+
+
+   
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const checkButtons = document.querySelectorAll('.check-button');
 // console.log(checkButtons);
 

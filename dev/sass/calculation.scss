@@ -1,0 +1,82 @@
+.calculation {
+    overflow-x: clip;
+
+    .container {
+        position: relative; 
+    }
+    &__img-box {
+        position: absolute;
+        bottom: -111px;
+        right: -3px;
+    }
+
+    &__img {
+        max-width: 560px;
+        width: 36vw;
+    }
+
+}
+
+.calculation-form {
+    max-width: 626px;
+    width: 100%;
+    background-color: $bg-secondary;
+    border-radius: 20px;
+    padding: 49px 35px 42px;
+
+    .input-box {
+        margin: 0 15px 20px;
+
+        &.has-checkbox {
+            margin-bottom: 5px;
+            padding-top: 18px;
+            label {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    
+    label[for="fileInput"] {
+        border-radius: 10px;
+        border: 1px dashed rgba(255, 255, 255, 0.26);
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+        font-weight: 400;
+        cursor: pointer;
+        margin-top: 40px;
+        &:hover {
+            border: 1px dashed $color-secondary;
+        }
+    }
+    
+    #fileInput {
+        display: none;
+    }
+
+    .btn {
+        max-width: 251px;
+        padding: 19.6px 29px;
+    }
+
+}
+
+#file-name {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    font-size: 15px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

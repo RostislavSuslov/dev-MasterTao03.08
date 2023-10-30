@@ -4,6 +4,12 @@
         padding-left: 20px;
     }
 
+    .container-xxl {
+        padding: 0;
+    }
+
+
+
     a.navbar-brand {
         width: 126px;
 
@@ -35,4 +41,102 @@
         padding: 49px 0 26px;
     }
 
+
+    .template-title {
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        &.col-lg-7 {
+            margin-bottom: 56px;
+         
+            h2 {
+                font-size: 24px;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .first-screen {
+        margin-bottom: 56px;
+    }
+
+    .first-screen-slider {
+
+
+        .slick-slide {
+            display: flex;
+            height: calc(100vh - 72px);
+            align-items: center;
+            background-position: center;
+
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                background: linear-gradient(180deg, rgb(0 0 0 / 1%) 6%, rgb(18 18 18 / 8%) 63%);
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+        }
+    }
+
+    .first-screen-title {
+        font-size: 32px;
+        margin-bottom: 11px;
+        max-width: 285px;
+    }
+
+    .first-screen-subtitle {
+        font-size: 16px;
+        margin-bottom: 18px;
+        max-width: 275px;
+    }
+
+    .calculation-form {
+        padding: 49px 15px 13px;
+        .input-box.has-checkbox {
+            margin-bottom: 7px;
+            padding-top: 4px;
+        }
+
+        label[for=fileInput] {
+            margin-top: 31px;
+        }
+
+        .btn {
+            max-width: 100%;
+            width: 100%;
+            padding: 19.6px 15px 19.6px 29px;
+            .icon {
+                margin: 0 -14px 0 70px;
+            }
+        }
+    }
+
+    .calculation__img {
+        display: none;
+    }
+
+    #file-name {
+        top: 0;
+    }
+    
 }

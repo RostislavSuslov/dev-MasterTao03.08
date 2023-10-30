@@ -345,6 +345,7 @@ ul {
         transform: rotate(180deg);
     }
 }
+
 .slick-dots {
     display: flex;
     justify-content: center;
@@ -456,7 +457,6 @@ section {
     margin-bottom: 50px;
 
     h2 {
- 
         line-height: 124.5%;
         text-transform: uppercase;
         margin-bottom: 6px;
@@ -484,7 +484,6 @@ section {
     /*type 3*/
     &.col-lg-7 {
         margin-bottom: 35px;
-        text-align: left;
         h2 {
             &:after {
                 content: "";
@@ -496,17 +495,10 @@ section {
                 background-color: $color-secondary;
             }
         }
-
-        &:after {
-            display: none;
-
-        }
     }
 }
 
-.input-row {
-    display: flex;
-}
+
 
 .input-column {
     width: 100%;
@@ -553,11 +545,13 @@ section {
     }
 }
 
+
+/*for-form*/
 .padding {
     padding-top: 21px; /*для .input-column */
 }
 
 .has-checkbox {
-    margin-bottom: 6px;  /*для input-box*/
+    margin-bottom: 8px;  /*для input-box*/
 }
   
