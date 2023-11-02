@@ -57,39 +57,40 @@ $(document).ready(function() {
 
 
  
-    // Выбираем все элементы с классом 'carousel-template' и для каждого из них выполняем следующую функцию
-$('.carousel-template').each(function () {
-    var slider = $(this); // Получаем текущий элемент с классом 'carousel-template' и сохраняем его в переменной slider
-    
-    // Инициализируем плагин Slick Carousel для текущего элемента
-    slider.slick({
-        infinite: true, // Бесконечная прокрутка карусели
-        slidesToShow: 3, // Отображать 3 слайда одновременно
-        slidesToScroll: 1, // Прокручивать по 1 слайду за раз
-         responsive: [
-            {
-              breakpoint: 1346,
-              settings: {
-                slidesToShow: 2,
-               }
-            },
-            {
-                breakpoint: 955,
-                settings: {
-                  slidesToShow: 1,
-                 }
-            },
-            {
-                breakpoint:600,
-                settings: {
-                  slidesToShow: 1,
-                  dots: true,
-                  arrows: false,
-                 }
-            },
-        ]
-    });
+
+$('.dilivery-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
 });
+
 });
 
 const burger = document.querySelector('.hamburger');
