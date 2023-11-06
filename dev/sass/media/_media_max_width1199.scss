@@ -1,10 +1,34 @@
+@media screen and (max-width: 1399px) {
+    .dilivery-slider {
+       
+        .slick-arrow {
+            &.slick-next {
+                right: -92px;
+            }
+
+            &.slick-prev {
+                left: -92px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .dilivery-slider {
+        max-width: 749px;
+        margin: 0 auto;
+    }
+}
+
+
+
 @media screen and (max-width: 1199px) {
-    header{
+    header {
         .navbar-light {
             .navbar-nav {
                 margin: 5px auto 0;
                 max-width: 560px;
             }
-        } 
-    } 
+        }
+    }
 }

@@ -1,6 +1,6 @@
 .advantage {
     text-align: center;
-    margin-bottom: 48px;
+    max-width: 267px;
     &__img-box {
         width: 113px;
         height: 113px;
@@ -22,5 +22,12 @@
         font-weight: 400;
         max-width: 160px;
         margin: 0 auto;
+    }
+}
+
+.slick-slider {
+
+    .advantage {
+        margin: 0 auto 48px;
     }
 }
