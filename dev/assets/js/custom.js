@@ -58,7 +58,7 @@ $(document).ready(function() {
 
  
 
-$('.dilivery-slider').slick({
+$('.template-slider').slick({
     dots: false,
     infinite: true,
     speed: 300,
